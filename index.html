@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next.js Portfolio Instructions</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 1rem;
+        }
+        .container { 
+            text-align: center; 
+            padding: 2.5rem; 
+            background-color: white; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1); 
+            max-width: 650px;
+        }
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: #555;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        code { 
+            background-color: #eef; 
+            padding: 0.25em 0.5em; 
+            border-radius: 6px; 
+            font-family: "SF Mono", "Fira Code", monospace;
+            font-size: 1rem;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+        ol {
+            list-style-position: inside;
+            text-align: left;
+            padding: 0;
+            margin: 0 auto 1.5rem auto;
+            max-width: fit-content;
+        }
+        li {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #0070f3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            border-top: 1px solid #eee;
+            margin-top: 2rem;
+            padding-top: 2rem;
+        }
+        .section:first-child {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "tailwindcss": "https://aistudiocdn.com/tailwindcss@^4.1.13",
+    "tailwindcss-animate": "https://aistudiocdn.com/tailwindcss-animate@^1.0.7",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+    "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^3.3.1",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@radix-ui/react-slot": "https://aistudiocdn.com/@radix-ui/react-slot@^1.2.3",
+    "class-variance-authority": "https://aistudiocdn.com/class-variance-authority@^0.7.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@radix-ui/react-avatar": "https://aistudiocdn.com/@radix-ui/react-avatar@^1.1.10",
+    "next-themes": "https://aistudiocdn.com/next-themes@^0.4.6",
+    "next-themes/": "https://aistudiocdn.com/next-themes@^0.4.6/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.544.0",
+    "next/": "https://aistudiocdn.com/next@^15.5.3/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.12",
+    "next": "https://aistudiocdn.com/next@^15.5.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>This is a Next.js Project</h1>
+            <p>This file is a placeholder. Your portfolio is a dynamic application that needs to be run with a server or built into static files.</p>
+        </div>
+
+        <div class="section">
+            <h2>For Development</h2>
+            <p>To view your portfolio with live updates as you make changes:</p>
+            <ol>
+                <li>Install dependencies: <code>npm install</code></li>
+                <li>Start the dev server: <code>npm run dev</code></li>
+            </ol>
+            <p>Then, open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> in your browser.</p>
+        </div>
+
+        <div class="section">
+            <h2>For Deployment (Static HTML)</h2>
+            <p>I have configured the project to export a static HTML version. You can host these files on any static web host.</p>
+            <ol>
+                <li>Build the static site: <code>npm run build</code></li>
+            </ol>
+            <p>After the build is complete, you will find all the static files, including <code>index.html</code>, in a new folder named <code>/out</code>.</p>
+            <p>You can then upload the contents of the <code>/out</code> folder to your web host.</p>
+        </div>
+    </div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
