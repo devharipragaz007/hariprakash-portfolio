@@ -7,9 +7,14 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://devharipragaz007.github.io"),
   title: {
     default: `${siteConfig.name} | ${siteConfig.role}`,
     template: `%s | ${siteConfig.name}`,
@@ -22,13 +27,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hariprakash.dev", // Replace with actual domain
+    url: "https://devharipragaz007.github.io",
     title: `${siteConfig.name} | ${siteConfig.role}`,
     description: siteConfig.shortBio,
     siteName: siteConfig.name,
     images: [
       {
-        url: `https://hariprakash.dev/og-image.png`, // Replace with actual domain and OG image path
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} - ${siteConfig.role}`,
@@ -39,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} | ${siteConfig.role}`,
     description: siteConfig.shortBio,
-    images: [`https://hariprakash.dev/og-image.png`], // Replace with actual domain and OG image path
+    images: ["/og-image.png"],
   },
 };
 
