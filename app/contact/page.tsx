@@ -17,7 +17,7 @@ export default function ContactPage() {
                 <div className="mt-12 flex flex-col items-center gap-6">
                     <Button size="lg" asChild className="w-full max-w-xs">
                         {/* Replace with your actual Calendly link */}
-                        <Link href="https://calendly.com/your-link-here" target="_blank">
+                        <Link href="https://calendly.com/devharipragaz007/30min" target="_blank">
                             <Calendar className="mr-2 h-5 w-5" /> Book a Call
                         </Link>
                     </Button>
